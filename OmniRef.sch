@@ -32,7 +32,7 @@ LIBS:analog_devices
 LIBS:references
 LIBS:elec-unifil
 LIBS:switches
-LIBS:VoltageReference-cache
+LIBS:OmniRef-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -286,7 +286,7 @@ U 1 1 5A180B4C
 P 6550 4250
 F 0 "D5" H 6550 4350 50  0000 C CNN
 F 1 "LED" H 6550 4150 50  0000 C CNN
-F 2 "_NTSFootprints:LED_1206_1.7mmHole" H 6550 4250 50  0001 C CNN
+F 2 "_NTSFootprints:LED_1206_2.15mmHole" H 6550 4250 50  0001 C CNN
 F 3 "" H 6550 4250 50  0000 C CNN
 	1    6550 4250
 	0    -1   -1   0   
@@ -301,7 +301,7 @@ U 1 1 5A19594F
 P 1150 4050
 F 0 "J1" H 1150 4300 50  0000 C TNN
 F 1 "4mm Banana Jack Pair" V 1000 4050 50  0000 C TNN
-F 2 "_NTSFootprints:Banana_Jack_2pin_.25_.75" H 1150 3825 50  0001 C CNN
+F 2 "_NTSFootprints:Banana_Jack_2pin_Wings_45M_.25_.75" H 1150 3825 50  0001 C CNN
 F 3 "" H 1125 4050 50  0001 C CNN
 	1    1150 4050
 	1    0    0    -1  
@@ -312,7 +312,7 @@ U 1 1 5A195DF2
 P 5950 6450
 F 0 "J2" H 5950 6700 50  0000 C TNN
 F 1 "4mm Banana Jack Pair" V 5800 6450 50  0000 C TNN
-F 2 "_NTSFootprints:Banana_Jack_2pin_.25_.75" H 5950 6225 50  0001 C CNN
+F 2 "_NTSFootprints:Banana_Jack_2pin_Wings_.25_.75" H 5950 6225 50  0001 C CNN
 F 3 "" H 5925 6450 50  0001 C CNN
 	1    5950 6450
 	-1   0    0    -1  
@@ -594,7 +594,7 @@ U 1 1 5A216667
 P 2000 3450
 F 0 "SW1" H 2000 3620 50  0000 C CNN
 F 1 "SW_SPDT" H 2000 3250 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 2000 3450 50  0001 C CNN
+F 2 "_NTSFootprints:CnK_L_Series_DPDT" H 2000 3450 50  0001 C CNN
 F 3 "" H 2000 3450 50  0000 C CNN
 	1    2000 3450
 	-1   0    0    1   
@@ -618,25 +618,14 @@ F 3 "" V 1050 1510 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery BT2
-U 1 1 5A217A5F
-P 1050 1950
-F 0 "BT2" H 1150 2050 50  0000 L CNN
-F 1 "Battery" H 1150 1950 50  0000 L CNN
-F 2 "_NTSFootprints:9vClipWireLeads" V 1050 2010 50  0001 C CNN
-F 3 "" V 1050 2010 50  0000 C CNN
-	1    1050 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR06
 U 1 1 5A218B9C
-P 1050 2250
-F 0 "#PWR06" H 1050 2000 50  0001 C CNN
-F 1 "GND" H 1050 2100 50  0000 C CNN
-F 2 "" H 1050 2250 50  0000 C CNN
-F 3 "" H 1050 2250 50  0000 C CNN
-	1    1050 2250
+P 1050 1750
+F 0 "#PWR06" H 1050 1500 50  0001 C CNN
+F 1 "GND" H 1050 1600 50  0000 C CNN
+F 2 "" H 1050 1750 50  0000 C CNN
+F 3 "" H 1050 1750 50  0000 C CNN
+	1    1050 1750
 	1    0    0    -1  
 $EndComp
 Text GLabel 1250 1200 2    60   Output ~ 0
@@ -664,7 +653,7 @@ U 1 1 5A24E8BC
 P 5250 3850
 F 0 "D7" H 5250 3950 50  0000 C CNN
 F 1 "LED" H 5250 3750 50  0000 C CNN
-F 2 "_NTSFootprints:LED_1206_1.7mmHole" H 5250 3850 50  0001 C CNN
+F 2 "_NTSFootprints:LED_1206_2.15mmHole" H 5250 3850 50  0001 C CNN
 F 3 "" H 5250 3850 50  0000 C CNN
 	1    5250 3850
 	0    -1   -1   0   
@@ -677,29 +666,6 @@ Wire Wire Line
 	5250 4350 5250 4550
 Connection ~ 5250 3550
 Connection ~ 5250 4550
-$Comp
-L R R11
-U 1 1 5A2589C2
-P 750 1950
-F 0 "R11" V 830 1950 50  0000 C CNN
-F 1 "0" V 750 1950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 680 1950 50  0001 C CNN
-F 3 "" H 750 1950 50  0000 C CNN
-	1    750  1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	750  1800 750  1700
-Wire Wire Line
-	750  1700 1050 1700
-Connection ~ 1050 1700
-Wire Wire Line
-	750  2100 750  2200
-Wire Wire Line
-	750  2200 1050 2200
-Wire Wire Line
-	1050 2150 1050 2250
-Connection ~ 1050 2200
 Wire Wire Line
 	2600 3550 2600 3100
 $Comp

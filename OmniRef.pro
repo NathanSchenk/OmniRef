@@ -1,4 +1,4 @@
-update=11/29/2017 7:02:29 PM
+update=12/16/2017 9:40:30 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -63,3 +61,15 @@ LibName31=references
 LibName32=elec-unifil
 LibName33=switches
 LibName34=C:/Users/Nathan/Desktop/KiCadLib/Components/_NTSCustomRegulators
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
+[general]
+version=1
