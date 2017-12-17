@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.5)
 
   (general
-    (links 102)
-    (no_connects 5)
+    (links 121)
+    (no_connects 2)
     (area 104.242399 57.785799 184.047601 108.584201)
     (thickness 1.6)
     (drawings 38)
     (tracks 172)
     (zones 0)
-    (modules 60)
+    (modules 79)
     (nets 22)
   )
 
@@ -143,6 +143,272 @@
     (add_net V+)
   )
 
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A3602CE)
+    (at 151.765 82.423)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A3602C8)
+    (at 155.702 71.12)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A3602BE)
+    (at 160.02 96.52)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A3602B0)
+    (at 155.956 90.043)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A3602A4)
+    (at 153.924 88.646)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A360295)
+    (at 140.335 97.282)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A36028E)
+    (at 142.875 97.282)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A360278)
+    (at 142.875 107.442)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A36026F)
+    (at 140.335 107.442)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A360265)
+    (at 120.65 97.155)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A360257)
+    (at 117.348 93.472)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A360245)
+    (at 110.871 82.931)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A360237)
+    (at 125.349 84.328)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A360227)
+    (at 140.462 70.358)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A360219)
+    (at 143.51 72.898)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A360209)
+    (at 140.335 94.488)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A3601F1)
+    (at 160.02 82.423)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A3601E8)
+    (at 160.909 79.883)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A3601D8)
+    (at 145.542 68.961)
+    (descr "module 1 pin (ou trou mecanique de percage)")
+    (tags DEV)
+    (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1pin (at 0 3) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
   (module _NTSFootprints:Banana_Jack_2pin_Wings_45M_.25_.75 (layer F.Cu) (tedit 5A35F3B5) (tstamp 5A35F51D)
     (at 177.165 92.71 90)
     (descr "Dual banana socket, footprint - 2 x 6mm drills")
@@ -251,7 +517,7 @@
   )
 
   (module _NTSFootprints:Via_Tented_0.3mm (layer F.Cu) (tedit 5A1B402B) (tstamp 5A1FAE17)
-    (at 162.052 85.344)
+    (at 142.875 94.488)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (fp_text reference REF** (at 0 -3.048) (layer F.SilkS) hide
@@ -3326,8 +3592,8 @@
   (segment (start 155.913 76.327) (end 155.913 77.513) (width 0.5) (layer B.Cu) (net 14))
   (segment (start 155.702 77.724) (end 155.702 80.485) (width 0.5) (layer B.Cu) (net 14) (tstamp 5A1F8DB9))
   (segment (start 155.913 77.513) (end 155.702 77.724) (width 0.5) (layer B.Cu) (net 14) (tstamp 5A1F8DB8))
-  (segment (start 151.13 104.775) (end 153.035 104.775) (width 0.5) (layer B.Cu) (net 17) (status C00000))
-  (segment (start 153.035 104.775) (end 154.94 102.87) (width 0.5) (layer B.Cu) (net 17) (tstamp 5A35FE5B) (status 400000))
+  (segment (start 151.13 104.775) (end 153.035 104.775) (width 0.5) (layer B.Cu) (net 17))
+  (segment (start 153.035 104.775) (end 154.94 102.87) (width 0.5) (layer B.Cu) (net 17) (tstamp 5A35FE5B))
   (segment (start 154.94 102.87) (end 160.655 102.87) (width 0.5) (layer B.Cu) (net 17) (tstamp 5A35FE5D))
   (segment (start 160.655 102.87) (end 165.735 97.79) (width 0.5) (layer B.Cu) (net 17) (tstamp 5A35FE61))
   (segment (start 165.735 97.79) (end 165.735 74.93) (width 0.5) (layer B.Cu) (net 17) (tstamp 5A35FE6C))
@@ -3337,7 +3603,7 @@
   (segment (start 146.685 69.215) (end 146.685 66.675) (width 0.5) (layer B.Cu) (net 17) (tstamp 5A35FE7B))
   (segment (start 146.685 66.675) (end 145.415 65.405) (width 0.5) (layer B.Cu) (net 17) (tstamp 5A35FE7F))
   (segment (start 145.415 65.405) (end 141.422 65.405) (width 0.5) (layer B.Cu) (net 17) (tstamp 5A35FE80))
-  (segment (start 141.422 65.405) (end 139.517 67.31) (width 0.5) (layer B.Cu) (net 17) (tstamp 5A35FE81) (status 800000))
+  (segment (start 141.422 65.405) (end 139.517 67.31) (width 0.5) (layer B.Cu) (net 17) (tstamp 5A35FE81))
   (segment (start 167.64 81.185) (end 167.64 74.295) (width 0.5) (layer B.Cu) (net 18))
   (segment (start 160.655 67.31) (end 148.717 67.31) (width 0.5) (layer B.Cu) (net 18) (tstamp 5A35F882))
   (segment (start 167.64 74.295) (end 160.655 67.31) (width 0.5) (layer B.Cu) (net 18) (tstamp 5A35F880))
