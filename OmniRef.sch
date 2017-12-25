@@ -599,12 +599,12 @@ Wire Wire Line
 $Comp
 L Battery BT1
 U 1 1 5A2175D4
-P 1500 1850
-F 0 "BT1" H 1600 1950 50  0000 L CNN
-F 1 "Battery" H 1600 1850 50  0000 L CNN
-F 2 "_NTSFootprints:9vClipWireLeads" V 1500 1910 50  0001 C CNN
-F 3 "" V 1500 1910 50  0000 C CNN
-	1    1500 1850
+P 900 1850
+F 0 "BT1" H 1000 1950 50  0000 L CNN
+F 1 "Battery" H 1000 1850 50  0000 L CNN
+F 2 "_NTSFootprints:9vClipWireLeads" V 900 1910 50  0001 C CNN
+F 3 "" V 900 1910 50  0000 C CNN
+	1    900  1850
 	1    0    0    -1  
 $EndComp
 Text GLabel 5050 1350 2    60   Output ~ 0
@@ -840,7 +840,7 @@ F 3 "" H 2400 1900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 2400 4850 2400
+	900  2400 4850 2400
 Connection ~ 3200 2400
 Connection ~ 2400 1350
 Wire Wire Line
@@ -870,11 +870,11 @@ Connection ~ 4300 2400
 Connection ~ 4850 1350
 Connection ~ 2400 2400
 Wire Wire Line
-	1500 1250 1800 1250
+	900  1250 1800 1250
 Wire Wire Line
-	1500 900  1500 1650
+	1500 900  1500 1700
 Wire Wire Line
-	1500 2050 1500 2400
+	1500 2000 1500 2400
 Wire Wire Line
 	2400 1750 2400 1350
 Wire Wire Line
@@ -902,4 +902,20 @@ Wire Wire Line
 Wire Wire Line
 	4950 900  4950 1350
 Connection ~ 4950 1350
+$Comp
+L D D9
+U 1 1 5A3B30FB
+P 1500 1850
+F 0 "D9" H 1500 1950 50  0000 C CNN
+F 1 "SMA" H 1500 1750 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 1500 1850 50  0001 C CNN
+F 3 "" H 1500 1850 50  0000 C CNN
+	1    1500 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	900  2050 900  2400
+Connection ~ 1500 2400
+Wire Wire Line
+	900  1650 900  1250
 $EndSCHEMATC
