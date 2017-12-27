@@ -64,7 +64,7 @@ L R R1
 U 1 1 5A16DE92
 P 4150 4250
 F 0 "R1" V 4230 4250 50  0000 C CNN
-F 1 "2.4K" V 4150 4250 50  0000 C CNN
+F 1 "10K" V 4150 4250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 4080 4250 50  0001 C CNN
 F 3 "" H 4150 4250 50  0000 C CNN
 	1    4150 4250
@@ -75,7 +75,7 @@ L R R3
 U 1 1 5A16DEEC
 P 4150 3850
 F 0 "R3" V 4230 3850 50  0000 C CNN
-F 1 "270" V 4150 3850 50  0000 C CNN
+F 1 "100K" V 4150 3850 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 4080 3850 50  0001 C CNN
 F 3 "" H 4150 3850 50  0000 C CNN
 	1    4150 3850
@@ -136,8 +136,8 @@ F 3 "" H -700 650 50  0000 C CNN
 	1    -700 650 
 	1    0    0    -1  
 $EndComp
-Text Notes 6600 2900 0    60   ~ 0
-First regulator section \nAdjust R1 and R3 values to provide approximately 1-2v above reference output voltage.\nAdjust R7 and R10 value to light LED with reasonable brightness for the voltage chosen.\n\nC3 = 1/ (2pi * R3 * 200 Hz)
+Text Notes 4300 3250 0    60   ~ 0
+Adjust R1 and R3 values to provide approximately 2v above reference output voltage.\nWith R3 at 100K and R1 at 10K, the voltage should be about 13.58V\nAdjust R7 and R10 value to light LED with reasonable brightness for the voltage chosen.\n3mA seems to be about right for the LED brightness.
 $Comp
 L C C5
 U 1 1 5A16FFC2
@@ -275,7 +275,7 @@ L R R7
 U 1 1 5A180ADC
 P 6550 4600
 F 0 "R7" V 6630 4600 50  0000 C CNN
-F 1 "1K" V 6550 4600 50  0000 C CNN
+F 1 "3.6K" V 6550 4600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 6480 4600 50  0001 C CNN
 F 3 "" H 6550 4600 50  0000 C CNN
 	1    6550 4600
@@ -340,10 +340,10 @@ F 3 "" H 2350 5950 50  0000 C CNN
 	1    2350 5950
 	1    0    0    -1  
 $EndComp
-Text Notes 1350 5100 0    60   ~ 0
-R9 is only used for certain linear technology ic's that have a shutdown terminal.
-Text Notes 7100 4050 0    60   ~ 0
-D6 is intended to clamp the output voltage driven from an external source.\nIt also provides reverse voltage protection.\n\nR9 is to provide a fixed load for the regulator to work against.\n\nR6 and C7 act as a low frequency filter.\n\nD2 is to protect the IC if the output is driven from an external source.
+Text Notes 6900 5450 0    60   ~ 0
+R9 is only used for certain Linear Technology IC's that have a shutdown terminal.\n\nC10 is only used for certain Maxim Integrated IC's.\n\nC4 and C5 are optional stability improving capacitors.\nCheck the datasheet of the reference to see if one should be used.\n\nR2 and RV1 are to trim the output voltage on certain references.
+Text Notes 6700 6300 0    60   ~ 0
+D6 is intended to clamp the output voltage if driven from an external source.\nIt also provides reverse voltage protection.\n\nR8 is to provide a fixed load for the regulator to work against and is probably not needed.\n\nOnly one output bypass cap is really needed.  The different ones shown just\nprovide options if a particular reference needs a certain capacitance or ESR.
 Wire Wire Line
 	-700 650  -700 750 
 Wire Wire Line
@@ -559,22 +559,8 @@ F 1 "PMBT3906" H 6650 3800 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 6650 3950 50  0001 C CNN
 F 3 "" H 6450 3850 50  0000 C CNN
 	1    6450 3850
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
-$Comp
-L D D4
-U 1 1 5A211331
-P 2200 4050
-F 0 "D4" H 2200 4150 50  0000 C CNN
-F 1 "SMA" H 2200 3950 50  0000 C CNN
-F 2 "Diodes_SMD:D_SMA" H 2200 4050 50  0001 C CNN
-F 3 "" H 2200 4050 50  0000 C CNN
-	1    2200 4050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2200 4200 2200 4550
-Connection ~ 2200 4550
 Wire Wire Line
 	2450 4200 2450 4550
 Connection ~ 2450 4550
@@ -589,9 +575,6 @@ Wire Wire Line
 	1350 4150 1350 4550
 Text GLabel 1350 3350 0    60   Input ~ 0
 BAT+
-Wire Wire Line
-	2200 3450 2200 3900
-Connection ~ 2200 3550
 Wire Wire Line
 	1800 3350 1350 3350
 Wire Wire Line
@@ -614,7 +597,7 @@ L R R10
 U 1 1 5A24E8B6
 P 5250 4200
 F 0 "R10" V 5330 4200 50  0000 C CNN
-F 1 "1K" V 5250 4200 50  0000 C CNN
+F 1 "3.6K" V 5250 4200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 5180 4200 50  0001 C CNN
 F 3 "" H 5250 4200 50  0000 C CNN
 	1    5250 4200
@@ -922,4 +905,6 @@ F 3 "" H 2000 1350 50  0000 C CNN
 	2    2000 1350
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	2200 3450 2200 3550
 $EndSCHEMATC
