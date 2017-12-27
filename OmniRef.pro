@@ -1,4 +1,4 @@
-update=12/18/2017 7:04:03 AM
+update=12/26/2017 7:16:43 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,16 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [general]
 version=1
 [eeschema]
@@ -73,3 +63,13 @@ LibName31=references
 LibName32=elec-unifil
 LibName33=switches
 LibName34=Libraries/ap3015
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

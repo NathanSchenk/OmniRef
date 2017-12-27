@@ -39,11 +39,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "OmniRef"
+Date "2017-12-26"
+Rev "1"
+Comp "Schenktronics"
+Comment1 "Nathan Schenk"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -340,8 +340,8 @@ F 3 "" H 2350 5950 50  0000 C CNN
 	1    2350 5950
 	1    0    0    -1  
 $EndComp
-Text Notes 6900 5450 0    60   ~ 0
-R9 is only used for certain Linear Technology IC's that have a shutdown terminal.\n\nC10 is only used for certain Maxim Integrated IC's.\n\nC4 and C5 are optional stability improving capacitors.\nCheck the datasheet of the reference to see if one should be used.\n\nR2 and RV1 are to trim the output voltage on certain references.
+Text Notes 3150 5650 0    60   ~ 0
+R9 is only used for certain Linear Technology IC's.\nC10 is only used for certain Maxim Integrated IC's.\n\nC4 and C5 are optional stability improving capacitors.\nCheck the datasheet of the reference to see if one should be used.\n\nR2 and RV1 are to trim the output voltage on certain references.
 Text Notes 6700 6300 0    60   ~ 0
 D6 is intended to clamp the output voltage if driven from an external source.\nIt also provides reverse voltage protection.\n\nR8 is to provide a fixed load for the regulator to work against and is probably not needed.\n\nOnly one output bypass cap is really needed.  The different ones shown just\nprovide options if a particular reference needs a certain capacitance or ESR.
 Wire Wire Line
