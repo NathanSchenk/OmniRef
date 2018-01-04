@@ -105,10 +105,10 @@ F 3 "" H 3200 3100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR4
+L GND #PWR01
 U 1 1 5A16ED85
 P 5400 4550
-F 0 "#PWR4" H 5400 4300 50  0001 C CNN
+F 0 "#PWR01" H 5400 4300 50  0001 C CNN
 F 1 "GND" H 5400 4400 50  0000 C CNN
 F 2 "" H 5400 4550 50  0000 C CNN
 F 3 "" H 5400 4550 50  0000 C CNN
@@ -116,10 +116,10 @@ F 3 "" H 5400 4550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR1
+L GND #PWR02
 U 1 1 5A16F2EF
 P -700 750
-F 0 "#PWR1" H -700 500 50  0001 C CNN
+F 0 "#PWR02" H -700 500 50  0001 C CNN
 F 1 "GND" H -700 600 50  0000 C CNN
 F 2 "" H -700 750 50  0000 C CNN
 F 3 "" H -700 750 50  0000 C CNN
@@ -127,10 +127,10 @@ F 3 "" H -700 750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG1
+L PWR_FLAG #FLG03
 U 1 1 5A16F405
 P -700 650
-F 0 "#FLG1" H -700 745 50  0001 C CNN
+F 0 "#FLG03" H -700 745 50  0001 C CNN
 F 1 "PWR_FLAG" H -700 830 50  0000 C CNN
 F 2 "" H -700 650 50  0000 C CNN
 F 3 "" H -700 650 50  0000 C CNN
@@ -151,10 +151,10 @@ F 3 "" H 3150 6700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR2
+L GND #PWR04
 U 1 1 5A170864
 P 2350 7300
-F 0 "#PWR2" H 2350 7050 50  0001 C CNN
+F 0 "#PWR04" H 2350 7050 50  0001 C CNN
 F 1 "GND" H 2350 7150 50  0000 C CNN
 F 2 "" H 2350 7300 50  0000 C CNN
 F 3 "" H 2350 7300 50  0000 C CNN
@@ -342,7 +342,7 @@ F 3 "" H 2350 5950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3100 5700 0    60   ~ 0
-R9 is only used for certain Linear Technology IC's.\nC10 is only used for certain Maxim Integrated IC's.\n\nC4 and C5 are optional stability improving capacitors.\nCheck the datasheet of the reference to see if one should be used.\n\nR2, R14, R15 and RV1 are to trim the output voltage on certain references.\n\nU1 and U3 are stacked on top of eachother.  This is to allow for the DIP footprint on the PCB
+R9 is only used for certain Linear Technology IC's.\nC10 is only used for certain Maxim Integrated IC's.\n\nC4 and C5 are optional stability improving capacitors.\nCheck the datasheet of the reference to see if one should be used.\n\nR2 and RV1 are to trim the output voltage on certain references.\n\nU1 and U3 are stacked on top of eachother.  This is to allow for the DIP footprint on the PCB
 Text Notes 6950 6450 0    60   ~ 0
 D6 is intended to clamp the output voltage if driven from an external source.\nIt also provides reverse voltage protection.\n\nR8 is to provide a fixed load for the regulator to work against and is probably not needed.\n\nOnly one output bypass cap is really needed.  The different ones shown just\nprovide options if a particular reference needs a certain capacitance or ESR.
 Wire Wire Line
@@ -401,6 +401,10 @@ Wire Wire Line
 	1550 6050 1600 6050
 Wire Wire Line
 	1900 6050 1950 6050
+Wire Wire Line
+	3750 6550 3750 7000
+Wire Wire Line
+	3750 6250 3750 5850
 Wire Wire Line
 	3300 6400 3150 6400
 Wire Wire Line
@@ -497,10 +501,10 @@ Wire Wire Line
 Text GLabel 6100 4450 0    60   Input ~ 0
 ER
 $Comp
-L GND #PWR5
+L GND #PWR05
 U 1 1 5A2075A4
 P 6550 4800
-F 0 "#PWR5" H 6550 4550 50  0001 C CNN
+F 0 "#PWR05" H 6550 4550 50  0001 C CNN
 F 1 "GND" H 6550 4650 50  0000 C CNN
 F 2 "" H 6550 4800 50  0000 C CNN
 F 3 "" H 6550 4800 50  0000 C CNN
@@ -741,10 +745,10 @@ Wire Wire Line
 Connection ~ 4300 1350
 NoConn ~ 1800 1450
 $Comp
-L GND #PWR3
+L GND #PWR06
 U 1 1 5A382251
 P 3200 2450
-F 0 "#PWR3" H 3200 2200 50  0001 C CNN
+F 0 "#PWR06" H 3200 2200 50  0001 C CNN
 F 1 "GND" H 3200 2300 50  0000 C CNN
 F 2 "" H 3200 2450 50  0000 C CNN
 F 3 "" H 3200 2450 50  0000 C CNN
@@ -904,34 +908,4 @@ F 3 "" H 2000 1350 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	2200 3450 2200 3550
-$Comp
-L R R15
-U 1 1 5A4DBF51
-P 3750 6750
-F 0 "R15" V 3830 6750 50  0000 C CNN
-F 1 "1" V 3750 6750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3680 6750 50  0001 C CNN
-F 3 "" H 3750 6750 50  0000 C CNN
-	1    3750 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R14
-U 1 1 5A4DC08D
-P 3750 6050
-F 0 "R14" V 3830 6050 50  0000 C CNN
-F 1 "1" V 3750 6050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3680 6050 50  0001 C CNN
-F 3 "" H 3750 6050 50  0000 C CNN
-	1    3750 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 5850 3750 5900
-Wire Wire Line
-	3750 6550 3750 6600
-Wire Wire Line
-	3750 6900 3750 7000
-Wire Wire Line
-	3750 6200 3750 6250
 $EndSCHEMATC
